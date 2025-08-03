@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Kill count</title>
+		<link rel="icon" type="image/x-icon" href="favicon.ico">
+		<link rel="stylesheet" href="styles-num.css">
+
+		<script type="text/javascript" src="main.js"></script>
+		
+		<meta charset="UTF-8">
+		<meta name="keywords" content="Horror movies, Thrillers, Cinema, Movies">
+		<meta name="description" content="Horror movie statistics">
+		<meta name="author" content="Antonia V">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<style>
+			h2{ background-color: rgba(84, 3, 3, 0.893);
+				font-family: verdana;
+				text-align: left;
+				color: White;
+				text-shadow: 0.20vw 0.20vw black;
+
+				}
+			
+
+			#titlu{
+				background-color: rgba(255, 0, 0, 0.664);
+				font-family: Arial, Helvetica, sans-serif;
+				text-align: left;
+				font-size: 3.5vw;
+				
+			}
+
+			#popup_login{
+  				float: right;
+  				text-align: center;
+  				text-decoration: none;
+  				color: white;
+  				padding: 0.729vw  0.833vw;
+  				font-size: medium;
+  				border: solid;
+  				background-color: rgba(139, 0, 0, 0.473);
+  				border-right-color: rgba(255, 255, 255, 0.563);
+  				border-bottom-color: rgba(255, 255, 255, 0.563);
+  				text-shadow: 0.09vw 0.09vw darkred;
+			}
+
+
+		</style>
+	</head>
+
+	<body>
+
+		<nav class="wrapper">
+
+			<header>
+				<nav class="navbar">
+					<a href="mainpage.html">Home</a>
+					<a href="inspo.html">The inspo</a>
+					<div class="dropdown">
+						<button class="dropbtn">Statistics </button>
+						<div class="dropdown_items">
+							<a href="the_numbers.html">The numbers</a>
+							<a href="gcbh.html">Best/Worst Kills</a>
+						</div>
+					</div>
+					<div class="dropdown">
+						<button class="dropbtn">Games</button>
+						<div class="dropdown_items">
+							<a href="fill_page.html">Fill the page!</a>
+							<a href="hangman.html">Hangman</a>
+						</div>
+					</div>
+					<a href="contact.html">Contact</a>
+					<button id="popup_login">Are you the dev?</button>
+				</nav>
+
+				<img id="splatter" src="blood-splatter.png" alt="Blood splatter">
+			
+				<h1 id="titlu" style="border:4px solid White;">Kill count - <i>The Site</i></h1>
+			</header>
+
+
+
+			<div>
+				<nav class="sidebar">
+					<h2>Quick-menu</h2>
+					<a href="#Movie1">Leprechaun in the Hood</a>
+					<a href="#Movie2">Carrie</a>
+					<a href="#Movie3">The Invisible Man</a>
+					<a href="#Movie4">Killer Klowns From Outer Space</a>
+					<a href="#Movie5">Final Destination</a>
+				</nav>
+			</div>
+			
+
+			<div>
+				<div class="intro">
+					<p>
+					The Kill Count would be nothing without counting the kills in horror movies, so here are the numbers. This is the part where we do an intro and do a sketch, but sadly I can't fully capture the magic of James A. Janisse in one site (at least with my current skills). Though it was a hard pick, for the sake of making the choices below diverse (and not too overwhelming to code and research) below are 5 films, each ranging in their number of kills, execution and sub-genres.
+					They are ordered in asceding order by their kill count.
+					</p>
+				</div>
+			</div>
+
+			<div class="container">
+
+				<h2 id="Movie1">Leprechaun in the Hood (2000) - 10 kills</h2>
+				<div class="poster">
+					<img src="lith.jpg" alt="Leprechaun In The Hood Poster">
+				</div>
+				<div class="piechrt">
+					<img src="lith-pc.png" alt="Leprechaun Pie Chart">
+				</div>
+				<div class="desc">
+					<p class="first">
+					<i>Leprechaun in the Hood</i> (also known as Leprechaun 5 or Leprechaun 5: In the Hood) is a 2000 American black comedy-horror film directed by Rob Spera and the fifth installment in the Leprechaun series. The film follows Warwick Davis as the evil leprechaun Lubdan, who searches for his magic flute that three hoodlums stole and kills anyone who gets in his way. (Wikipedia)
+					</p>
+					<p>
+					All in all, I'd say it's my favorite out of the Leprechaun franchise, mostly because it doesn't take itself seriously <b>at all</b>. This movie it's so silly at times it's easy to forget it's a horror flick, especially when you see the Leprechaun smoking a clover and rapping. I still can't believe they got Ice-T to play in it.
+					</p>
+				</div>
+				<div class="trailer">
+					<iframe class="video_trailer" src="https://www.youtube.com/embed/d5TsR86ieJA?si=Ek5K0hawawnBTXZA" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+				</div>
+
+
+				<h2 id="Movie2">Carrie (1976) - 73 kills</h2>
+				<div class="poster">
+					<img src="carrie.jpg" alt="Carrie 1976 Poster">
+				</div>
+				<div class="piechrt">
+					<img src="carrie-pc.png" alt="Carrie Pie Chart">
+				</div>
+				<div class="desc">
+					<p class="first">
+						<i>Carrie</i> is a 1976 American supernatural horror film directed by Brian De Palma from a screenplay written by Lawrence D. Cohen, adapted from Stephen King's 1974 epistolary novel of the same name. The film stars Sissy Spacek as Carrie White, a shy teenage girl who is constantly mocked and bullied at her school. She later develops the power of telekinesis and uses it to wreak vengeance on her tormentors. (Wikipedia)
+					</p>
+					<p>
+						Carrie was one of the first horror movies I got into, while gory, the themes really resonated with my tween/teen self and helped me see that horror movies are not just jumpscares and creepy monsters with no motive, but can be a great storytelling tool.
+					</p>
+				</div>
+				<div class="trailer">
+					<iframe class="video_trailer" src="https://www.youtube.com/embed/U_dDpmoQjqg?si=E2C9dr4vIUhiSdlc" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+				</div>
+
+
+				<h2 id="Movie3">The Invisible Man (1933) - 105 kills</h2>
+				<div class="poster">
+					<img src="inv_man.jpeg" alt="The Invisible Man 1933 Poster">
+				</div>
+				<div class="piechrt">
+					<img src="inv_man-pc.png" alt="The Invisible Man Pie Chart">
+				</div>
+				<div class="desc">
+					<p class="first">
+						<i>The Invisible Man</i> is a 1933 pre-Code American science fiction horror film directed by James Whale loosely based on H. G. Wells's 1897 novel, The Invisible Man, produced by Universal Pictures, and starring Gloria Stuart, Claude Rains and William Harrigan. The film involves a stranger named Dr. Jack Griffin (Rains) who is covered in bandages and has his eyes obscured by dark glasses, the result of a secret experiment that makes him invisible, taking lodging in the village of Iping.(Wikipedia)
+					</p>
+					<p>
+						I am not an avid watcher of retro horror movies, but this one really stuck out to me. While pretty silly (without even trying to), the practical effects are still very impressive for their time and they really made me appreciate the work behind it more. Just the thought of having to paint every still makes this feat absolutely remarkable.
+					</p>
+				</div>
+				<div class="trailer">
+					<iframe class="video_trailer" src="https://www.youtube.com/embed/JKFvCjItGDg?si=oECAe8ZA7SUtDqnx" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+				</div>
+
+
+				<h2 id="Movie4">Killer Klowns From Outer Space (1988) - 234 kills</h2>
+				<div class="poster">
+					<img src="kkfs.jpg" alt="Killer Klowns From Outer Space Poster">
+				</div>
+				<div class="piechrt">
+					<img src="kkfs-pc.png" alt="Killer Klowns From Outer Space Pie Chart">
+				</div>
+				<div class="desc">
+					<p class="first">
+						<i>Killer Klowns From Outer Space</i> is a 1988 American science fiction comedy horror film written, directed and produced by the Chiodo Brothers and starring Grant Cramer, Suzanne Snyder, John Allen Nelson and John Vernon. It is the only film written and directed by the Chiodo Brothers, who also created the practical effects and makeup. It concerns evil extraterrestrials who resemble clowns arriving on Earth and invading a small town in order to capture, kill and harvest the human inhabitants to use as sustenance.(Wikipedia)
+					</p>
+					<p>
+						God this movie is the absolute definition of silly. I think it really reaches The Room levels of campiness, it's so tacky and dumb that it's great. Even though the protagonists are the blandest beings ever, the alien clowns and every single special effect that comes with them are so colorful and memorable that you almost forget about the main 3.
+					</p>
+				</div>
+				<div class="trailer">
+					<iframe class="video_trailer" src="https://www.youtube.com/embed/cZra9CWFxyE?si=cjTiNkWt6oDZbZ5Y" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+				</div>
+
+
+				<h2 id="Movie5">Final Destination (2000) - 292 kills</h2>
+				<div class="poster">
+					<img src="final_dest.jpg" alt="Final Destination Poster">
+				</div>
+				<div class="piechrt">
+					<img src="final_dest-pc.png" alt="Final Destination Pie Chart">
+				</div>
+				<div class="desc">
+					<p class="first">
+						<i>Final Destination</i> Final Destination is a 2000 American supernatural horror film directed by James Wong, with a screenplay written by Wong, Glen Morgan, and Jeffrey Reddick, based on a story by Reddick. It is the first installment in the Final Destination film series and stars Devon Sawa, Ali Larter, Kerr Smith, and Tony Todd. Sawa portrays a teenager who cheats death after having a premonition of a catastrophic plane explosion. He and several of his classmates leave the plane before the explosion occurs, but Death later takes the lives of those who were meant to die on the plane.(Wikipedia)
+					</p>
+					<p>
+						One of my favorite horror movie franchises. Maybe the premise of the movies is not inherintely deep but the sheer creativity put into every single kill got me hooked (and also more paranoid). Final Destination really knows how to play with suspense and with the viewers expectations. Though not all FD movies rely on mostly practical effects, the early ones do and I absolutely love that.
+					</p>
+				</div>
+				<div class="trailer">
+					<iframe class="video_trailer" src="https://www.youtube.com/embed/RfVrU1fuR3Q?si=hbHOhhEKo9JX1q7X" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+				</div>
+
+				
+			</div>
+			
+			<button id="alien">Alien Theme</button>
+
+
+			<footer>
+				<div class="footer-class">
+
+					<p style= "color: DodgerBlue;"> <small>NO COPYRIGHT INFRINGEMENT (pls don't sue me James A. Janisse (or any of the studios))</small></p>
+					<hr>
+					<p><small>Made By Anto</small></p>
+				</div>
+			</footer>
+		</nav>
+
+	</body>
+
+
+</html>

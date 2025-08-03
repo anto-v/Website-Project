@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Kill count</title>
+		<link rel="icon" type="image/x-icon" href="favicon.ico">
+		<link rel="stylesheet" href="contact.css">
+		<script type="text/javascript" src="form_contact.js"></script>
+
+		<meta charset="UTF-8">
+		<meta name="keywords" content="Horror movies, Thrillers, Cinema, Movies">
+		<meta name="description" content="Horror movie statistics">
+		<meta name="author" content="Antonia V">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<style>
+			h2{ background-color: rgba(84, 3, 3, 0.893);
+				font-family: verdana;
+				text-align: left;
+				color: White;
+				text-shadow: 0.20vw 0.20vw black;
+				}
+			
+
+			#titlu{
+				background-color: rgba(255, 0, 0, 0.664);
+				font-family: Arial, Helvetica, sans-serif;
+				text-align: left;
+				font-size: 3.5vw;
+			}
+
+			#popup_login{
+  				float: right;
+  				text-align: center;
+  				text-decoration: none;
+  				color: white;
+  				padding: 0.729vw  0.833vw;
+  				font-size: medium;
+  				border: solid;
+  				background-color: rgba(139, 0, 0, 0.473);
+  				border-right-color: rgba(255, 255, 255, 0.563);
+  				border-bottom-color: rgba(255, 255, 255, 0.563);
+  				text-shadow: 0.09vw 0.09vw darkred;
+			}
+
+		</style>
+	</head>
+		
+	
+
+	<body>
+
+
+		<header>
+			<nav class="navbar">
+					<a href="mainpage.html">Home</a>
+					<a href="inspo.html">The inspo</a>
+					<div class="dropdown">
+						<button class="dropbtn">Statistics </button>
+						<div class="dropdown_items">
+							<a href="the_numbers.html">The numbers</a>
+							<a href="gcbh.html">Best/Worst Kills</a>
+						</div>
+					</div>
+					<div class="dropdown">
+						<button class="dropbtn">Games</button>
+						<div class="dropdown_items">
+							<a href="fill_page.html">Fill the page!</a>
+							<a href="hangman.html">Hangman</a>
+						</div>
+					</div>
+					<a href="contact.html">Contact</a>
+					<button id="popup_login">Are you the dev?</button>
+			</nav>
+			
+			<img id="splatter" src="blood-splatter.png" alt="Blood splatter">
+
+			<h1 id="titlu" style="border:4px solid White;">Kill count - <i>The Site</i></h1>
+		</header>
+
+		<div class="container">
+
+			<h2>For any suggestion or comments you can contact me @:</h2>
+
+			<table>
+				<tr>
+				<th><u>Communication type</u></th>
+				<th><u>Username/@</u></th>
+				</tr>
+
+				<tr>
+				<td>Email</td>
+				<td>antoniavoinescu.maria@gmail.com</td>
+				</tr>
+
+				<tr>
+				<td>Instagram</td>
+				<td>@atyvki</td>
+				</tr>
+
+				<tr>
+				<td>Phone number</td>
+				<td>0752 061 ??? (im not giving my number out on the internet)</td>
+				</tr>
+
+				<tr>
+				<td>GitHub</td>
+				<td>@atyvki</td>
+				</tr>
+
+				<tr>
+				<td>Linkedin (pls someone hire me)</td>
+				<td><a id="linkd" href="https://www.linkedin.com/in/antonia-maria-voinescu-639811332/"> Antonia-Maria Voinescu</a></td>
+				</tr>
+				
+			</table>
+
+		</div>
+		
+		<h3>On site form if you find the other contact methods too laborious</h3>
+
+		<div id="container"> 
+			<form target="_self" method="post" action="contact.html" id="form" onsubmit="return validateForm()">
+			  <fieldset>
+			  <legend>Contact:</legend>
+			   <div>
+				<label for="nume">Name/Pseudonim:</label>
+				<input type="text" id="nume" minlength="3" maxlength="30" size="20">
+			   </div>
+		  
+			  <div>
+				<label for="credit" >On a scale from 0(least important) to 2000(most important) how important is the inquiry?:</label>
+				<input type="range" id="credit" required min="0" max="2000" value="500" step="50" list="values" style="accent-color: red;">
+				<span><output id="value"></output></span>
+				<datalist id="values">
+				  <option value="0"> </option>
+				  <option value="500"> </option>
+				  <option value="1000"> </option>
+				  <option value="1500"> </option>
+				  <option value="2000"> </option>
+				</datalist>
+			  </div>
+	
+				
+				<div>
+				  <label for="rasa">What is the inquiry about?</label>
+				  <select id="rasa">
+					<option disabled selected>--Please choose an option--</option>
+					<option>Problem with site accesibility</option>
+					<option>Problem with site format on device</option>
+					<option>Horror movie suggestion/s</option>
+					<option>Data innacuracies</option>
+					<option>Question about the site</option>
+					<option>Suggestion for feature/s to add to the site</option>
+					<option>Other</option>
+	
+				  </select>
+				</div>
+	
+	
+				 <div>
+				  <label for="fotografie">Screenshot of the problem (if there is one):</label>
+				  <input type="file" id="fotografie" accept="image/*" multiple="">
+				</div>
+				
+				<div>
+					<label for="email">Email:</label>
+					<input type="email" id="email" required placeholder="abc@gmail.com">
+					</div>
+		
+					 <div>
+					  <label for="telefon">Phone number:</label>
+					  <input type="tel" id="telefon" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890">
+					 </div>
+		
+					 <div>
+					  <label for="weburl">Reference to a another site (if needed):</label>
+					  <input type="url" id="website" placeholder="http://www.example.com">
+					 </div>
+	
+					 <div>
+						<label for="observatii">Comments:</label>
+						<br>
+						<textarea id="comentarii" required minlength="10" maxlength="200" rows="4" cols="50" style="resize: none;"></textarea>
+					  </div>
+					  
+					  <div>
+						<input type="submit" value="Send Request">
+					  </div>
+
+					  <div>
+						<input type="reset" value="Reset This Form">
+					  </div>
+	
+			</fieldset>
+	
+
+		  </form> 
+		</div>
+
+		<button id="alien">Alien Theme</button>
+		
+		<footer>
+			<div class="footer-class">
+
+				<p style= "color: DodgerBlue;"> <small>NO COPYRIGHT INFRINGEMENT (pls don't sue me James A. Janisse (or any of the studios))</small></p>
+				<hr>
+				<p><small>Made By Anto</small></p>
+			</div>
+		</footer>
+
+	</body>
+
+
+</html>

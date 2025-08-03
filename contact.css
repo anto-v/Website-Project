@@ -1,0 +1,236 @@
+
+
+.navbar{
+    overflow: hidden;
+    background-color: #1e1c1c;
+    border: 1.5vw dotted white;
+}
+
+.navbar a {
+
+  float: left;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  padding: 0.729vw  0.833vw;
+  font-size: medium;
+  border: solid;
+  border-right-color: white;
+  text-shadow: 0.09vw 0.09vw darkred;
+
+}
+
+.dropdown{
+
+  float: left;
+  overflow: hidden;
+
+}
+
+.dropbtn {
+  border: none;
+  outline: none;
+  color: white;
+  border: solid;
+  border-right-color: white;
+  padding: 0.729vw  0.833vw;
+  font-size: medium;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  text-shadow: 0.09vw 0.09vw darkred;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: darkred;
+  text-shadow: 0.09vw 0.09vw black;
+}
+
+.dropdown_items{
+  display: none;
+  position: absolute;
+  background-color: #d2cdcde8;
+  min-width: 10%;
+  z-index: 1;
+  
+}
+.dropdown_items a {
+  float: none;
+  color: black;
+  padding: 0.729vw  0.833vw;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  text-shadow: 0.07vw 0.07vw white !important;
+}
+
+.dropdown:hover .dropdown_items {
+  display: block;
+}
+
+.dropdown_items a:hover {
+  background-color: darkred;
+}
+
+
+
+#titlu{
+  animation: jello 2s ease 0s 1 normal none;
+  text-shadow: 0.20vw 0.20vw white;
+  
+}
+
+
+@keyframes jello {
+  0% {
+	transform: scale3d(1, 1, 1);
+  }
+
+  30% {
+	transform: scale3d(1.25, 0.75, 1);
+  }
+
+  40% {
+	transform: scale3d(0.75, 1.25, 1);
+  }
+
+  50% {
+	transform: scale3d(1.15, 0.85, 1);
+  }
+
+  65% {
+	transform: scale3d(0.95, 1.05, 1);
+  }
+
+  75% {
+	transform: scale3d(1.05, 0.95, 1);
+  }
+
+  100% {
+	transform: scale3d(1, 1, 1);
+  }
+}
+
+#splatter {
+
+    float: right;
+    transition-timing-function: ease-in;
+    width: 1%;
+    height: 2%;
+    overflow: hidden;
+    opacity: 10%;
+    transition: width 2s, height 4s, opacity 3s;
+}
+
+#splatter:hover {
+   width: 15%;
+   height: 20%;
+   opacity: 100%;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 5%;
+}
+
+td, th {
+    border: 0.2vw dashed black;
+    text-align: left;
+    padding: 1%;
+}
+  
+tr:nth-child(even) {
+    background-color: lightgrey;
+
+}
+tr:nth-child(odd) {
+    background-color:darkred;
+    color: whitesmoke;
+
+}
+
+#linkd:link{
+    color:rgb(68, 14, 216);
+  }
+  
+#linkd:visited{
+    color:rgb(142, 17, 17);
+  }
+
+header {
+  display: block;
+}
+
+h3{
+  font: 1.5em Arial,
+    Helvetica,
+    sans-serif;
+  color: white;
+  text-shadow: 0.11vw 0.11vw black;
+  background-color: darkred;
+
+}
+body {
+  width: 90%;
+  max-width: 100%;
+  margin: 2em auto;
+  font: 1em Arial,
+    Helvetica,
+    sans-serif;
+  background: rgb(211,211,211);
+  background: linear-gradient(180deg, rgba(211,211,211,1) 0%, rgba(38,4,16,1) 100%);
+  letter-spacing: 0.05em;
+}
+
+fieldset {
+  margin-bottom: 0.5em;
+}  
+
+form {
+  background-color: rgba(240, 218, 220, 0.292);
+  padding: 1em;
+  margin: 2em auto;
+}
+
+textarea {
+  resize: none;
+  margin-top: 0.5em;
+}
+
+#alien {
+  position: fixed;
+  bottom: 1%;
+  right: 1%;
+  border: 0.3vw solid black;
+  font-size: medium;
+  background-color: #d8f0c8d8;
+}
+
+footer{
+	border-style: groove;
+	border-bottom-color: black;
+	border-top-color: darkred;
+	border-width: thick;
+	padding-left: 10%;
+	background-color: rgba(255, 248, 220, 0.211);
+  font-family: consolas;
+}
+
+
+.footer-class > *:nth-child(3){
+
+  text-align: right;
+  color: Tomato;
+  padding-right: 5%;
+
+}
+
+
+
